@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+		<title>Ryde Hockey</title>
+		<style>
+			body, div, iframe {
+				margin: auto;
+				text-align:center;
+				min-height:0px
+			}
+		</style>
+		<script type="text/javascript" src="//tabaws.mbww.com/javascripts/api/tableau_v8.js"></script>
+		<script type='text/javascript' src='//code.jquery.com/jquery-2.1.4.min.js'></script>
+		<script type='text/javascript' src='../tableau_anomaly.js'></script>
+		
+		<script>
+			window.onload=function() {
+				CreateViz('https://tabaws.mbww.com/t/anomaly/views/PitchHockeyOverview/TeamDashboard', '#viz', 'top');
+			} 
+		</script>
+	</head>
+	<body>
+		<div id="viz"></div>
+	</body>
+</html>
